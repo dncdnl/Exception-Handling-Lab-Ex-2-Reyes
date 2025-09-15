@@ -13,10 +13,6 @@ namespace Exception_Handling_Lab_Ex_2_Reyes
 {
     public partial class frmAddProduct : Form
     {
-        public frmAddProduct()
-        {
-            InitializeComponent();
-        }
         //declaring Variables and adding the Access Modifiers
         //Strings
         private string _ProductName;
@@ -28,6 +24,15 @@ namespace Exception_Handling_Lab_Ex_2_Reyes
         private int _Quantity;
         //Double
         private double _SellingPrice;
+        // Declaring the variable showProductList of BindSource
+        BindingSource showProductList;
+
+        public frmAddProduct()
+        {
+            InitializeComponent();
+            //Instantiating the variable showProductList
+            showProductList = new BindingSource();
+        }
 
         private void frmAddProduct_Load(object sender, EventArgs e)
         {
