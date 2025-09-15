@@ -27,5 +27,21 @@ namespace Exception_Handling_Lab_Ex_2_Reyes
         private int _Quantity;
         //Double
         private double _SellingPrice;
+
+        private void frmAddProduct_Load(object sender, EventArgs e)
+        {
+            //Creating an array for the Categories
+            string[] ListOfproductsCategory =
+             {
+                "Bevarages",
+                "Bread/Bakery",
+                "Canned/Jarred Goods",
+                "Dairy",
+                "Frozen Goods",
+                "Meat",
+                "Personal Care",
+                "Other"
+            };
+        }
     }
 }
