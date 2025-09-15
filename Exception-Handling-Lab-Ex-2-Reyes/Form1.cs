@@ -16,5 +16,16 @@ namespace Exception_Handling_Lab_Ex_2_Reyes
         {
             InitializeComponent();
         }
+        //declaring Variables and adding the Access Modifiers
+        //Strings
+        private string _ProductName;
+        private string _Category;
+        private string _MfgDate;
+        private string _ExpDate;
+        private string _description;
+        //Int
+        private int _Quantity;
+        //Double
+        private double _SellingPrice;
     }
 }
