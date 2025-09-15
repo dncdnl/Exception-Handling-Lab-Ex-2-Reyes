@@ -29,25 +29,6 @@ namespace Exception_Handling_Lab_Ex_2_Reyes
         //Double
         private double _SellingPrice;
 
-        // pasting the Given code to the setters and getters
-        public string Product_Name(string name)
-        {
-            if (!Regex.IsMatch(name, @"^[a-zA-Z]+$"))
-                //Exception here
-                return name;
-        }
-        public int Quantity(string qty)
-        {
-            if (!Regex.IsMatch(qty, @"^[0-9]"))
-                //Exception here
-                return Convert.ToInt32(qty);
-        }
-        public double SellingPrice(string price)
-        {
-            if (!Regex.IsMatch(price.ToString(), @"^(\d*\.)?\d+$"))
-                //Exception here
-                return Convert.ToDouble(price);
-        }
         private void frmAddProduct_Load(object sender, EventArgs e)
         {
             //Creating an array for the Categories
@@ -67,6 +48,25 @@ namespace Exception_Handling_Lab_Ex_2_Reyes
             {
                 cbCategory.Items.Add(category);
             }
+        }
+        // pasting the Given code to the setters and getters
+        public string Product_Name(string name)
+        {
+            if (!Regex.IsMatch(name, @"^[a-zA-Z]+$"))
+                //Exception here
+                return name;
+        }
+        public int Quantity(string qty)
+        {
+            if (!Regex.IsMatch(qty, @"^[0-9]"))
+                //Exception here
+                return Convert.ToInt32(qty);
+        }
+        public double SellingPrice(string price)
+        {
+            if (!Regex.IsMatch(price.ToString(), @"^(\d*\.)?\d+$"))
+                //Exception here
+                return Convert.ToDouble(price);
         }
     }
 }
