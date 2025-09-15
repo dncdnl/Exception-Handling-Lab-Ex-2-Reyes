@@ -42,6 +42,11 @@ namespace Exception_Handling_Lab_Ex_2_Reyes
                 "Personal Care",
                 "Other"
             };
+            // Using a Foreach loop to add the items in the array to the combo box
+            foreach (string category in ListOfproductsCategory)
+            {
+                cbCategory.Items.Add(category);
+            }
         }
     }
 }

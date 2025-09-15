@@ -33,7 +33,7 @@
             this.lblProduct = new System.Windows.Forms.Label();
             this.txtProductName = new System.Windows.Forms.TextBox();
             this.lblCategory = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbCategory = new System.Windows.Forms.ComboBox();
             this.lblMfgDate = new System.Windows.Forms.Label();
             this.dtPickerMfgDate = new System.Windows.Forms.DateTimePicker();
             this.lblExpDate = new System.Windows.Forms.Label();
@@ -95,16 +95,16 @@
             this.lblCategory.TabIndex = 3;
             this.lblCategory.Text = "Category:";
             // 
-            // comboBox1
+            // cbCategory
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.Thistle;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox1.Font = new System.Drawing.Font("Book Antiqua", 9F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(115, 91);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(258, 24);
-            this.comboBox1.TabIndex = 4;
+            this.cbCategory.BackColor = System.Drawing.Color.Thistle;
+            this.cbCategory.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbCategory.Font = new System.Drawing.Font("Book Antiqua", 9F);
+            this.cbCategory.FormattingEnabled = true;
+            this.cbCategory.Location = new System.Drawing.Point(115, 91);
+            this.cbCategory.Name = "cbCategory";
+            this.cbCategory.Size = new System.Drawing.Size(258, 24);
+            this.cbCategory.TabIndex = 4;
             // 
             // lblMfgDate
             // 
@@ -270,7 +270,7 @@
             this.Controls.Add(this.lblExpDate);
             this.Controls.Add(this.dtPickerMfgDate);
             this.Controls.Add(this.lblMfgDate);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbCategory);
             this.Controls.Add(this.lblCategory);
             this.Controls.Add(this.txtProductName);
             this.Controls.Add(this.lblProduct);
@@ -290,7 +290,7 @@
         private System.Windows.Forms.Label lblProduct;
         private System.Windows.Forms.TextBox txtProductName;
         private System.Windows.Forms.Label lblCategory;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbCategory;
         private System.Windows.Forms.Label lblMfgDate;
         private System.Windows.Forms.DateTimePicker dtPickerMfgDate;
         private System.Windows.Forms.Label lblExpDate;
