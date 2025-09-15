@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Exception_Handling_Lab_Ex_2_Reyes
 {
-    public partial class Inventory : Form
+    public partial class frmAddProduct : Form
     {
-        public Inventory()
+        public frmAddProduct()
         {
             InitializeComponent();
         }

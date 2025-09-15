@@ -16,7 +16,7 @@ namespace Exception_Handling_Lab_Ex_2_Reyes
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Inventory());
+            Application.Run(new frmAddProduct());
         }
     }
 }
