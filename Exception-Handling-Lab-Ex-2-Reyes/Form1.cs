@@ -73,5 +73,19 @@ namespace Exception_Handling_Lab_Ex_2_Reyes
                 //Exception here
                 return Convert.ToDouble(price);
         }
+
+        private void btnAddProduct_Click(object sender, EventArgs e)
+        {
+            //Pasting the given code in step 10
+            _ProductName = Product_Name(txtProductName.Text);
+            _Category = cbCategory.Text;
+            _MfgDate = dtPickerMfgDate.Value.ToString("yyyy-MM-dd");
+            _ExpDate = dtPickerExpDate.Value.ToString("yyyy-MM-dd");
+            _Description = richTxtDescription.Text;
+            _Quantity = Quantity(txtQuantity.Text);
+            _SellPrice = SellingPrice(txtSellPrice.Text);
+            showProductList.Add(new ProductClass(_ProductName, _Category, _MfgDate,
+            _ExpDate, _SellPrice, _Quantity, _Description)); gridViewProductList.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; gridViewProductList.DataSource = showProductList;
+        }
     }
 }
