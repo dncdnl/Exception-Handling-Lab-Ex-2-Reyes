@@ -97,14 +97,12 @@ namespace Exception_Handling_Lab_Ex_2_Reyes
                 {
                     throw new NumberFormatException(qty);
                 }
+                return Convert.ToInt32(qty);
             }
             catch (NumberFormatException nfx)
             {
                 MessageBox.Show("Number Format input in quantity." + nfx.Message);
-            }
-            finally
-            {
-                return Convert.ToInt32(qty);
+                return 0; // or another default/fallback value
             }
         }
         public double SellingPrice(string price)
@@ -116,14 +114,12 @@ namespace Exception_Handling_Lab_Ex_2_Reyes
                 {
                     throw new CurrenceyFormatException(price);
                 }
+                return Convert.ToDouble(price);
             }
             catch (CurrenceyFormatException cfx)
             {
                 MessageBox.Show("Currency Format input in selling price." + cfx.Message);
-            }
-            finally
-            {
-                return Convert.ToDouble(price);
+                return 0.0; // or another default/fallback value
             }
         }
 
