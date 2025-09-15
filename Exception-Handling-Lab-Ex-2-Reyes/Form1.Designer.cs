@@ -43,7 +43,7 @@
             this.lblPrice = new System.Windows.Forms.Label();
             this.txtSellPrice = new System.Windows.Forms.TextBox();
             this.lblDiscription = new System.Windows.Forms.Label();
-            this.richTxtDiscription = new System.Windows.Forms.RichTextBox();
+            this.richTxtDescription = new System.Windows.Forms.RichTextBox();
             this.btnAddProduct = new System.Windows.Forms.Button();
             this.gridViewProductList = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewProductList)).BeginInit();
@@ -214,18 +214,18 @@
             this.lblDiscription.Name = "lblDiscription";
             this.lblDiscription.Size = new System.Drawing.Size(102, 21);
             this.lblDiscription.TabIndex = 13;
-            this.lblDiscription.Text = "Discription:";
+            this.lblDiscription.Text = "Description:";
             // 
-            // richTxtDiscription
+            // richTxtDescription
             // 
-            this.richTxtDiscription.BackColor = System.Drawing.Color.Thistle;
-            this.richTxtDiscription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.richTxtDiscription.Font = new System.Drawing.Font("Book Antiqua", 9F);
-            this.richTxtDiscription.Location = new System.Drawing.Point(438, 84);
-            this.richTxtDiscription.Name = "richTxtDiscription";
-            this.richTxtDiscription.Size = new System.Drawing.Size(313, 151);
-            this.richTxtDiscription.TabIndex = 14;
-            this.richTxtDiscription.Text = "";
+            this.richTxtDescription.BackColor = System.Drawing.Color.Thistle;
+            this.richTxtDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richTxtDescription.Font = new System.Drawing.Font("Book Antiqua", 9F);
+            this.richTxtDescription.Location = new System.Drawing.Point(438, 84);
+            this.richTxtDescription.Name = "richTxtDescription";
+            this.richTxtDescription.Size = new System.Drawing.Size(313, 151);
+            this.richTxtDescription.TabIndex = 14;
+            this.richTxtDescription.Text = "";
             // 
             // btnAddProduct
             // 
@@ -261,7 +261,7 @@
             this.ClientSize = new System.Drawing.Size(772, 450);
             this.Controls.Add(this.gridViewProductList);
             this.Controls.Add(this.btnAddProduct);
-            this.Controls.Add(this.richTxtDiscription);
+            this.Controls.Add(this.richTxtDescription);
             this.Controls.Add(this.lblDiscription);
             this.Controls.Add(this.txtSellPrice);
             this.Controls.Add(this.lblPrice);
@@ -301,7 +301,7 @@
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.TextBox txtSellPrice;
         private System.Windows.Forms.Label lblDiscription;
-        private System.Windows.Forms.RichTextBox richTxtDiscription;
+        private System.Windows.Forms.RichTextBox richTxtDescription;
         private System.Windows.Forms.Button btnAddProduct;
         private System.Windows.Forms.DataGridView gridViewProductList;
     }

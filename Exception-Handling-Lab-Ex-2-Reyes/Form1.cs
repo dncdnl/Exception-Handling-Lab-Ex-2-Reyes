@@ -19,11 +19,11 @@ namespace Exception_Handling_Lab_Ex_2_Reyes
         private string _Category;
         private string _MfgDate;
         private string _ExpDate;
-        private string _description;
+        private string _Description;
         //Int
         private int _Quantity;
         //Double
-        private double _SellingPrice;
+        private double _SellPrice;
         // Declaring the variable showProductList of BindSource
         BindingSource showProductList;
 
