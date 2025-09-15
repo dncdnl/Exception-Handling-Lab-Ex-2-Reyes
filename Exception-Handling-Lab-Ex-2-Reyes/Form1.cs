@@ -13,6 +13,19 @@ namespace Exception_Handling_Lab_Ex_2_Reyes
 {
     public partial class frmAddProduct : Form
     {
+        // Creating custom Exception Classes
+        class NumberFormatException : Exception
+        {
+            public NumberFormatException(string quantity) : base(quantity) { }
+        }
+        class StringFormatException : Exception
+        {
+            public StringFormatException(string name) : base(name) { }
+        }
+        class CurrenceyFormatException : Exception
+        {
+            public CurrenceyFormatException(string price) : base(price) { }
+        }
         //declaring Variables and adding the Access Modifiers
         //Strings
         private string _ProductName;
