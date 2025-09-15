@@ -57,21 +57,61 @@ namespace Exception_Handling_Lab_Ex_2_Reyes
         // pasting the Given code to the setters and getters
         public string Product_Name(string name)
         {
-            if (!Regex.IsMatch(name, @"^[a-zA-Z]+$"))
-                //Exception here
+            // using try and catch for Exception Handling
+            try
+            {
+                if (!Regex.IsMatch(name, @"^[a-zA-Z]+$"))
+                {
+                    throw new StringFormatException(name);
+                }
+            }
+            catch (StringFormatException sfx)
+            {
+                MessageBox.Show("String Format input in product name." + sfx.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Only input string in the product name.");
+            }
                 return name;
         }
         public int Quantity(string qty)
         {
-            if (!Regex.IsMatch(qty, @"^[0-9]"))
-                //Exception here
+            // Using try and catch for Exception Handling
+            try
+            {
+                if (!Regex.IsMatch(qty, @"^[0-9]"))
+                {
+                    throw new NumberFormatException(qty);
+                }
+            }
+            catch (NumberFormatException nfx)
+            {
+                MessageBox.Show("Number Format input in quantity." + nfx.Message);
+            }
+            finally
+            {
                 return Convert.ToInt32(qty);
+            }
         }
         public double SellingPrice(string price)
         {
-            if (!Regex.IsMatch(price.ToString(), @"^(\d*\.)?\d+$"))
-                //Exception here
+            // Using try and catch for Exception Handling
+            try
+            {
+                if (!Regex.IsMatch(price.ToString(), @"^(\d*\.)?\d+$"))
+                {
+                    throw new CurrenceyFormatException(price);
+                }
+            }
+            catch (CurrenceyFormatException cfx)
+            {
+                MessageBox.Show("Currency Format input in selling price." + cfx.Message);
+            }
+            finally
+            {
                 return Convert.ToDouble(price);
+            }
         }
 
         private void btnAddProduct_Click(object sender, EventArgs e)
